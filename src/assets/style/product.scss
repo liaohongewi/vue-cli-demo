@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.shop-list{
+    display: inline-block;
+    margin-top: 10px;
+    background: #fff;
+    width: 100%;
+}
+.shop-list a{
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.shop-list .l{
+    display: inline-block;
+    width: 30%;
+}
+.shop-list .l img{
+    width: 100%;
+}
+.shop-list .r{
+    display: inline-block;
+    line-height: 32px;
+    margin-left: 10px;
+    width: 65%;
+}
+.shop-list span{
+    font-size: 14px;
+    color: #444444;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+.shop-list span.u-money {
+    font-size: 13px;
+    color: #ff2244;
+}
+.shop-list span.u-money i {
+    font-size: 18px;
+    font-style: initial;
+    margin-left: 0.1rem;
+}

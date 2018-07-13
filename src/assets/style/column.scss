@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.button-group{
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+}
+.button-group .classify{
+    padding: 12px 0;
+    width: 100%;
+    display: inline-block;
+}
+.button-group .l{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    border-right: 1px solid #eee;
+}
+.button-group .l .icon_parts{
+    background: url(~@/assets/images/shouye-peijian.png) no-repeat center;
+    width: 52px;
+    height: 50px;
+    background-size: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+.button-group .r{
+    display: inline-block;
+    text-align: center;
+    float: right;
+    width: 49%;
+}
+.button-group .r .icon_newsorder{
+    background: url(~@/assets/images/shouye-xinjiandindan.png) no-repeat center;
+    width: 52px;
+    height: 50px;
+    background-size: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+.button-group a{
+    font-size: 15px;
+    color: #444444;
+}
+

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* footer */
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke-width: 0 !important;
+    color: #81838e;
+}
+.bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 44px;
+    background-color: #f7f7f8;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.bar-tab {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1001;
+    height: 3.1rem;
+    padding: 0;
+    table-layout: fixed;
+}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active {
+    color: #0894ec;
+}
+.bar-tab .tab-item {
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    height: 3.5rem;
+    color: #929292;
+    text-align: center;
+    vertical-align: middle;
+}
+.bar-tab .tab-item .icon~.tab-label {
+    display: block;
+    font-size: .55rem;
+    position: relative;
+    top: -5px;
+}
+.bar .active .i-home {
+    background: url(~@/assets/images/shouye-xuanzhong.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+
+.bar .i-home {
+    background: url(~@/assets/images/shouye-shouye.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .active .i-find {
+    background: url(~@/assets/images/shouye-fenlei-xuanzhong.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .i-find {
+    background: url(~@/assets/images/shouye-fenlei.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .active .i-shopcart {
+    background: url(~@/assets/images/shouye-shoppingcart-xuanzhong.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .i-shopcart {
+    background: url(~@/assets/images/shouye-shoppingcart.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .active .i-mine {
+    background: url(~@/assets/images/shouye-wode-xuanzhong.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar .i-mine {
+    background: url(~@/assets/images/shouye-wode.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.bar-tab:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.bar:after, .bar:before {
+    background-color: #e3e5e9;
+    z-index: 1000;
+}
+.bar:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
