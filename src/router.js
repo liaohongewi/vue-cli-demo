@@ -10,7 +10,7 @@ export default new Router({
     {
       path:'/',
       name:'Myproduct',
-      component:Myproduct
+      component:Myproduct,
     },
     {
       path:'/userindex',
