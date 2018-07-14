@@ -6,6 +6,7 @@
             <column-nav></column-nav>
             <product-nav></product-nav>
         </div>
+        <footer-nav></footer-nav>
     </div>
 </template>
 
@@ -14,6 +15,7 @@
     import banner from '@/components/banner/banner.vue'
     import column from '@/components/column/column.vue'
     import product from '@/components/product/product.vue'
+    import footer from '@/components/footer/footer.vue'
     import Vue from 'vue'
     import axios from 'axios'
     import Vueaxios from 'vue-axios'
@@ -26,6 +28,7 @@
             "banner-nav":banner,
             "column-nav":column,
             "product-nav":product,
+            "footer-nav":footer,
         },
     }
 </script>
