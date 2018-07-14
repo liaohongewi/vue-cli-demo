@@ -1,0 +1,34 @@
+.UCcenter {
+    @include flex( between top );
+    position: relative;
+    height: 10em;
+    width: 100%;
+    padding: 10px 0;
+    background-image: url(../images/UserCenter/uc-bg.png);
+    background-size: cover;
+
+    &__avatar {
+        width: 4em;
+        height: 4em;
+        margin-top: 12px;
+    }
+
+    &__router {
+        margin: 0 16px;
+        font-size: 1.5em;
+    }
+
+    &__helper {
+        @include flex( start middle );
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: auto;
+        padding: 6px 12px;
+        border-radius: 200px 0 0 200px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, .5);
+        color: #f3e037;
+        font-size: 12px;
+    }
+}
