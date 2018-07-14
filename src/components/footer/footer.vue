@@ -12,7 +12,7 @@
             <span class="icon iconfont i-shopcart"></span>
             <span class="tab-label">购物车</span>
         </router-link>
-        <router-link class="tab-item" to="/">
+        <router-link class="tab-item" to="/userindex">
             <span class="icon iconfont i-mine"></span>
             <span class="tab-label">我的</span>
         </router-link>
