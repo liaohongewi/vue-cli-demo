@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.UCicon-wrap {
+    @include flex( auto middle );
+    width: auto;
+}
+.UCicon {
+    display: block;
+    width: 1em;
+    height: 1em;
+    // margin: 0 0 0 1em;
+    background-size: cover;
+
+    &.-router {
+        background-image: url(~@/assets/images/UserCenter/router.png);
+    }
+    &.-chongzhi {
+        background-image: url(~@/assets/images/UserCenter/chongzhi.png);
+    }
+    &.-tixian {
+        background-image: url(~@/assets/images/UserCenter/tixian.png);
+    }
+    &.-tixianmingxi {
+        background-image: url(~@/assets/images/UserCenter/tixianmingxi.png);
+    }
+    &.-yinhangka {
+        background-image: url(~@/assets/images/UserCenter/yinhangka.png);
+    }
+    &.-zijinmingxi {
+        background-image: url(~@/assets/images/UserCenter/zijinmingxi.png);
+    }
+
+    &.-phone {
+        background-image: url(~@/assets/images/UserCenter/phone.png);        
+    }
+    &.-code {
+        background-image: url(~@/assets/images/UserCenter/code.png);        
+    }
+    &.-setting {
+        background-image: url(~@/assets/images/UserCenter/setting.png);        
+    }
+    &.-email {
+        background-image: url(~@/assets/images/UserCenter/email.png);        
+    }
+    &.-edit {
+        background-image: url(~@/assets/images/UserCenter/edit.png);        
+    }
+    &.-star {
+        background-image: url(~@/assets/images/UserCenter/star.png);        
+    }
+    &.-question {
+        background-image: url(~@/assets/images/UserCenter/question.png);        
+    }
+    &.-add {
+        background-image: url(~@/assets/images/UserCenter/add.png);        
+    }
+}
