@@ -1,18 +1,12 @@
 <template>
   <div id="app">
-    <myproduct-nav></myproduct-nav>
-    <footer-nav></footer-nav>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import myproduct from '@/views/myproduct/myproduct.vue'
-import footer from '@/components/footer/footer.vue'
 export default {
-  components:{
-    "myproduct-nav":myproduct,
-    "footer-nav":footer,
-  }
+  name:'app'
 }
 </script>
 
