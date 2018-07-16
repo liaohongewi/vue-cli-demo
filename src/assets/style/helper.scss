@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.UCavatar {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 50%;
+
+    &.-small {
+        position: absolute;
+        right: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
+
+.UCimage__wrap {
+    @include flex( start top );
+}
+.UCimage {
+    margin: 1em 1em 1em 0;
+    width: 5em;
+    height: 5em;
+}
+
+.UCtext {
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    text-indent: 2em;
+    line-height: 22px;
+
+    &__title {
+        font-weight: 600;
+        color: rgb(31, 31, 31);
+    }
+
+    &__date {
+        margin: 1em 0;
+        color: rgb(156, 156, 156);
+        text-align: center;
+    }
+
+    p {
+        margin: 1em 0;
+    }
+
+    &.-border {
+        padding: .5em;
+        border: 1px solid rgb(221, 221, 221);
+    }
+}
+
+.UCfooter {
+    @include flex( center middle );
+    position: fixed;
+    bottom: 0;
+    height: 3em;
+    border-top: 1px solid #dadadb;
+    background-color: white;
+}
