@@ -30,9 +30,6 @@
     padding: 0;
     table-layout: fixed;
 }
-.bar-tab .tab-item.active, .bar-tab .tab-item:active {
-    color: #0894ec;
-}
 .bar-tab .tab-item {
     position: relative;
     display: table-cell;
@@ -48,24 +45,20 @@
     position: relative;
     top: -5px;
 }
-.bar .active .i-home {
-    background: url(~@/assets/images/shouye-xuanzhong.png) no-repeat center;
-    width: 24px;
-    height: 28px !important;
-    background-size: contain;
-}
-
 .bar .i-home {
     background: url(~@/assets/images/shouye-shouye.png) no-repeat center;
     width: 24px;
     height: 28px !important;
     background-size: contain;
 }
-.bar .active .i-find {
-    background: url(~@/assets/images/shouye-fenlei-xuanzhong.png) no-repeat center;
-    width: 24px;
-    height: 28px !important;
+.ishome .i-home {
+    background: url(~@/assets/images/shouye-xuanzhong.png) no-repeat center;
+    width: 24px!important;
+    height: 28px;
     background-size: contain;
+}
+.ishome .homefont {
+    color: #0894ec;
 }
 .bar .i-find {
     background: url(~@/assets/images/shouye-fenlei.png) no-repeat center;
@@ -73,11 +66,14 @@
     height: 28px !important;
     background-size: contain;
 }
-.bar .active .i-shopcart {
-    background: url(~@/assets/images/shouye-shoppingcart-xuanzhong.png) no-repeat center;
+.isfind .i-find {
+    background: url(~@/assets/images/shouye-fenlei-xuanzhong.png) no-repeat center;
     width: 24px;
     height: 28px !important;
     background-size: contain;
+}
+.isfind .findfont {
+    color: #0894ec;
 }
 .bar .i-shopcart {
     background: url(~@/assets/images/shouye-shoppingcart.png) no-repeat center;
@@ -85,17 +81,29 @@
     height: 28px !important;
     background-size: contain;
 }
-.bar .active .i-mine {
-    background: url(~@/assets/images/shouye-wode-xuanzhong.png) no-repeat center;
+.isshopcart .i-shopcart {
+    background: url(~@/assets/images/shouye-shoppingcart-xuanzhong.png) no-repeat center;
     width: 24px;
     height: 28px !important;
     background-size: contain;
+}
+.isshopcart .shopcartfont {
+    color: #0894ec;
 }
 .bar .i-mine {
     background: url(~@/assets/images/shouye-wode.png) no-repeat center;
     width: 24px;
     height: 28px !important;
     background-size: contain;
+}
+.ismine .i-mine {
+    background: url(~@/assets/images/shouye-wode-xuanzhong.png) no-repeat center;
+    width: 24px;
+    height: 28px !important;
+    background-size: contain;
+}
+.ismine .minefont{
+    color: #0894ec;
 }
 .bar-tab:before {
     content: '';
