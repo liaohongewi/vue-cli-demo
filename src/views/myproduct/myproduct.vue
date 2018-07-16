@@ -1,13 +1,11 @@
-<template>
-    <div>
-        <header-search></header-search>
-        <div class="content infinite-scroll infinite-scroll-bottom infinite-index-bottom native-scroll">
-            <banner-nav></banner-nav>
-            <column-nav></column-nav>
-            <product-nav></product-nav>
-        </div>
-        <footer-nav></footer-nav>
-    </div>
+<template lang="pug">
+    .div
+        header-search
+        .content.infinite-scroll.infinite-scroll-bottom.infinite-index-bottom.native-scroll
+            banner-nav
+            column-nav
+            product-nav
+        footer-nav(v-bind:class="{'ishome':isNowPage}")
 </template>
 
 <script>
@@ -30,6 +28,11 @@
             "product-nav":product,
             "footer-nav":footer,
         },
+        data(){
+            return{
+                isNowPage:true
+            }
+        }
     }
 </script>
 
