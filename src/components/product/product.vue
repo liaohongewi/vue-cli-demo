@@ -1,4 +1,4 @@
-<template>
+  <template>
     <div class="shop-list">
         <router-link to="/" v-for="product in info.data" :key="product.id">
             <div class="l">
@@ -15,7 +15,7 @@
                     </span>
                 </p>
                 <p>
-                    <span style="font-size: 13px; color: gray;">数量:{{product.saleQuantity}} &nbsp;&nbsp; {{product.shopName}}</span>
+            <span style="font-size: 13px; color: gray;">数量:{{product.saleQuantity}} &nbsp;&nbsp; {{product.shopName}}</span>
                 </p>
             </div>
         </router-link>
@@ -23,25 +23,26 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import axios from 'axios'
-import Vueaxios from 'vue-axios'
-import store from '@/store.js'
+import Vue from "vue";
+import axios from "axios";
+import Vueaxios from "vue-axios";
+import store from "@/store.js";
 
-Vue.use(Vueaxios, axios)
+Vue.use(Vueaxios, axios);
 export default {
-    data(){
-        return {
-            info: {}
-        }
-    },
-    mounted(){
-        let LocalAPI = 'https://www.easy-mock.com/mock/5b47190524cb747cf8888abb/store/product'
-        this.info = '数据正在加载'
-        Vue.axios.get(LocalAPI).then((res) => {
-            console.log(res.data)
-            this.info = res.data
-        })
-    }
-}
+  data() {
+    return {
+      info: {}
+    };
+  },
+  mounted() {
+    let LocalAPI =
+      "https://www.easy-mock.com/mock/5b47190524cb747cf8888abb/store/product";
+    this.info = "数据正在加载";
+    Vue.axios.get(LocalAPI).then(res => {
+      console.log(res.data);
+      this.info = res.data;
+    });
+  }
+};
 </script>
