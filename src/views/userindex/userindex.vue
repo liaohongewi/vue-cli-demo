@@ -1,5 +1,6 @@
 <template>
     <div>
+        <status-nav></status-nav>
         <ul class="UClist-group">
             <li class="UClist">
                 <div class="UClist__title">余额</div>
@@ -45,10 +46,12 @@
 </template>
 
 <script>
+    import status from '@/components/win-status/win-status.vue'
     import footer from '@/components/footer/footer.vue'
 
     export default {      
         components:{
+            "status-nav":status,
             "footer-nav":footer,
         },
     }
