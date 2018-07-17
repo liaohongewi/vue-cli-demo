@@ -1,6 +1,6 @@
   <template>
     <div class="shop-list">
-        <router-link to="/" v-for="product in info.data" :key="product.id">
+        <router-link to="/show" v-for="product in info.data" :key="product.id">
             <div class="l">
                 <img :src="product.mainImage">
             </div>
