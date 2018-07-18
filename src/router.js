@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Myproduct from '@/views/myproduct/myproduct.vue';
 import Userindex from '@/views/userindex/userindex.vue';
 import Showcontnet from '@/views/showproduct/showproduct.vue'
+import Login from '@/views/login/login.vue'
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path:'/show',
       name:"Showcontnet",
       component:Showcontnet
+    },
+    {
+      path:'/login',
+      name:'Login',
+      component:Login
     }
   ]
 });
