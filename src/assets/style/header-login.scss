@@ -237,3 +237,64 @@ input.userBtn-yellow{
 .protocol p{
     font-size: .85rem;
 }
+
+
+/* é€šç”¨å¤´éƒ¨ */
+
+.bar-nav .header-btn{
+    line-height: 2.2rem;
+    height:2.2rem;
+    font-size:1.1rem;
+    color:#81838e;
+    position: relative;
+    z-index:2;
+}
+.bar-nav .header-title{
+    position: absolute;
+    top: 0;
+    left: 2.2rem;
+    right: 2.2rem;
+    z-index:1;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 44px;
+    text-align: center;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.bar-nav .header-right {
+    padding-right: .5rem;
+    float: right;
+}
+.bar-nav .header-txt{
+    color:#999;
+    line-height: 44px;
+    position: relative;
+    z-index:2;
+    font-size: 0.75rem;
+}
+.bar-nav .icon_back{
+    background: url(~@/assets/images/login/left.png) no-repeat center;
+    left: 10px;
+    width: 15px;
+    height: 44px;
+    background-size: contain;
+}
+#user_login .icon_close{
+    background: url(~@/assets/images/login/quxiao.png) no-repeat center;
+    left: 10px;
+    width: 15px;
+    height: 44px;
+    background-size: contain;
+    position: absolute;
+}
+
+.popup{
+    background: #fff;
+    padding-bottom: 50px;
+}
+.popup .close-popup{
+    width: 100%;
+    height: 25px;
+}
