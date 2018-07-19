@@ -1,6 +1,6 @@
 <template lang="pug">
     header.bar.bar-nav.b-line
-        router-link.header-btn.header-left.iconfont.back.icon_back(to="/")
+        a.header-btn.header-left.iconfont.back.icon_back( @click="$router.back(-1)")
         h1.header-title 登录
-        router-link.header-txt.header-right(to="/") 立即注册
+        router-link.header-txt.header-right(to="/register") 立即注册
 </template>
