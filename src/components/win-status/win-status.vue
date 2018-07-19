@@ -1,19 +1,11 @@
-<template>
-    <div class="UCcenter">
-        <div class="UCcenter__router">
-            <i class="UCicon -setting"></i>
-        </div>
-
-        <div class="UCcenter__avatar">
-            <img class="UCavatar" src="@/assets/images/UserCenter/avatar.png">
-        </div>
-
-        <div class="UCcenter__router">
-            <i class="UCicon -email"></i>
-        </div>
-
-        <div class="UCcenter__helper">
-            账户管理&ensp;<i class="UCicon -router"></i>
-        </div>
-    </div>
+<template lang="pug">
+    .UCcenter
+        router-link.UCcenter__router(to="/login")
+            i.UCicon.-setting
+        router-link.UCcenter__avatar(to="/login")
+            img.UCavatar(src="@/assets/images/UserCenter/avatar.png")
+        router-link.UCcenter__router(to="/login")
+            i.UCicon.-email
+        router-link.UCcenter__helper(to="/login") 账户管理&ensp;
+            i.UCicon.-router
 </template>
