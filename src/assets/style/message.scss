@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+.UCpanel {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    width: 100%;
+    width: auto;
+    margin: 0 12px;
+    padding: 12px 0;
+    color: #8b8b8b;
+    background-color: white;
+    font-size: 14px; 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+    }
+    &__header.-column {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%; 
+    }
+    &__header.-start {
+        display: flex;
+        justify-content: start;
+        width: 100%; 
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 6px 0; 
+    }
+    &__full {
+      display: flex;
+      flex: none;
+      width: 100%;
+      color: #464646;
+      font-size: 16px; 
+    }
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; 
+    }
+    &__title {
+      color: #464646;
+      font-size: 16px;
+    }
+    &__title.-focus {
+        color: #ff5604; 
+    }
+    &__address {
+      color: #464646;
+      font-size: 16px;
+      font-weight: 600; 
+    }
+    &__date {
+      color: #a3a3a3;
+    }
+    &__helper {
+      color: #a3a3a3; 
+    }
+    &.-card {
+      padding: 12px;
+      border: 1px #e0e0e0 solid; 
+    }
+}
+    
