@@ -6,6 +6,9 @@ import Showcontnet from '@/views/showproduct/showproduct.vue'
 import Login from '@/views/login/login.vue'
 import Register from '@/views/login/register.vue'
 import Backpassword from '@/views/login/backpassword.vue'
+import Setting from '@/views/setting/setting.vue'
+import Account from '@/views/account/account.vue'
+import Message from '@/views/message/message.vue'
 
 Vue.use(Router);
 
@@ -40,6 +43,21 @@ export default new Router({
       path:'/backpassword',
       name:'Backpassword',
       component:Backpassword
+    },
+    {
+      path:'/setting',
+      name:'Setting',
+      component:Setting
+    },
+    {
+      path:'/account',
+      name:'Account',
+      component:Account
+    },
+    {
+      path:'/message',
+      name:'Message',
+      component:Message
     }
     
   ]
