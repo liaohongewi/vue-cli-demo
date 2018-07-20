@@ -32,3 +32,15 @@
         font-size: 12px;
     }
 }
+.UCbalance {
+    padding: 1em;
+    background-image: url(~@/assets/images/UserCenter/balance.png); 
+    &__helper {
+        color: #f3e037;
+    }
+    &__main{
+        color: white;
+        font-size: 64px;
+        font-weight: 400;
+    }
+}
