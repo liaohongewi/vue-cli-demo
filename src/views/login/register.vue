@@ -18,7 +18,7 @@
                                     input.form-text.flex-1(type="number" placeholder="请输入手机验证码")
                                     input.sendBtn.j-sendBtn.noUseful(type="button" unique="1" lesstime="0" value="发送验证码")
                             p.loginWarm 点击登录,即表示您同意
-                                router-link.open-popup(to="/login") 用户协议
+                                router-link.open-popup(to="/agreement") 用户协议
                             input.userBtn.userBtn-yellow(type="button" value="注册")
 </template>
 
