@@ -6,7 +6,7 @@
         router-link.tab-item(to="/")
             span.icon.iconfont.i-find
             span.tab-label.findfont 分类
-        router-link.tab-item(to="/")
+        router-link.tab-item(to="/shopcart")
             span.icon.iconfont.i-shopcart
             span.tab-label.shopcartfont 购物车
         router-link.tab-item(to="/userindex")
