@@ -293,6 +293,7 @@ body {
 	display: inline-block;
 	height: 5.75rem;
 	overflow: hidden;
+	padding-left: 5px;
 }
 
 .box_confirmOrder.box_shopCart .shopCart_in .box_txt_info {
@@ -313,6 +314,7 @@ body {
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	font-size: .75rem;
+	color: #8f8f94;
 }
 
 .box_shopCart .shopCart_in .box_txt_price {
@@ -325,7 +327,7 @@ body {
 }
 
 .box_shopCart .shopCart_in .box_txt_price p {
-	color: #fe2343;
+	color: #0894ec;
 }
 
 .box_shopCart .shopCart_in .box_txt_price p span {
@@ -569,4 +571,66 @@ body {
 .box_btn_guige a.box_active {
 	color: #FF0000;
 	border-color: #FF0000;
+}
+
+.mui-input-group {
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+.mui-checkbox label, .mui-radio label {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding-right: 3.625rem;
+}
+.mui-checkbox.mui-left label, .mui-radio.mui-left label {
+    padding-right: 0.9375rem;
+    padding-left: 3.625rem;
+}
+.box_shopCart .shopCart_in .mui-table-view-cell {
+    padding: 0;
+    height: 5.75rem;
+}
+.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 0.6875rem 0.9375rem;
+    -webkit-touch-callout: none;
+}
+.mui-table-view {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #fff;
+}
+.mui-table-view:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 0.0625rem;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+    top: -0.0625rem;
+}
+.mui-table-view-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0.9375rem;
+    height: 0.0625rem;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.shopCart_bottom .mui-input-row label {
+    font-size: 0.75rem;
+    color: #999;
+    padding-right: 0;
+    padding-left: 3rem;
 }
