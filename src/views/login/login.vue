@@ -19,7 +19,7 @@
                                         i.iconfont.eyes-no
                                         i.iconfont.eyes-yes
                             p.loginWarm 点击登录,即表示您同意
-                                router-link(to="/login") 用户协议
+                                router-link(to="/agreement") 用户协议
                             input(type="hidden" name="act" value="dologin")
                             input(type="submit" value="登录" class="userBtn userBtn-red" @click="onSubmit")
                             router-link.getPsw(to="/backpassword") 找回密码
